@@ -1,0 +1,52 @@
+body{
+    background-image: url(images/bgImage.png);
+    background-size: auto;
+}
+/* *{
+    background-color: black;
+    color:blanchedalmond;
+} */
+
+*{
+    /* background-color: linear-gradient(to top left, blue, white); */
+    color:black;
+    background-attachment: fixed;
+}
+
+.redBalloon{
+    width: 100px;
+    height: 132px;
+}
+
+.yellowBalloon{
+    width: 100px;
+    height: 132px;
+}
+
+#gameTitle{
+    color: aquamarine;
+    font-family: Verdana;
+}
+
+#wrapper{
+    background-color: coral;
+    text-align: center;
+    max-width: 600px;
+    margin:auto;
+}
+
+#restart{
+    width: 200px;
+    height: 50px;
+    backgroundcolor: green;
+
+}
+
+#myName{
+    background-image: url(images/biometricphoto.png);
+    text-align: right;
+    max-width: 400px;
+    margin:auto;
+    font-size: 100px;
+    color:burlywood;
+}

@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(164, 170, 235);
+    color: rgb(4, 98, 136);
+    background-attachment: fixed;
+}
+  
+canvas{
+  image-rendering:pixelated;
+  box-shadow: -3px 2px 9px 6px black;
+  background: white;
+  margin-top: 30px;
+}
+
+.controls, select, option{
+    font-size: 25px;
+}

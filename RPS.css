@@ -1,0 +1,86 @@
+#wrapper{
+    text-align: center;
+    font-family:monospace;
+    
+}
+
+#gameTitle{
+    font-family:monospace;
+    font-size: 72px;
+    text-shadow:0 0 3px chartreuse;
+}
+
+.userArea img {
+    width: 100px;
+    height: 100px;
+}
+
+.rps{
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    border: 3px solid rgb(9, 116, 55);
+    padding: 10px;
+}
+
+#scoreBoard{
+  border: 3px solid rgb(32, 60, 161);
+  width: 250px;
+  margin: 24px auto;
+  font-size: 55px;
+  border-radius: 6%;
+  padding: 17px;
+  position: relative;
+  font-family: Lucida;
+}
+
+.badge{
+    color: white;
+    font-size: 14px;
+    padding: 2px;
+}
+
+#userLabel{
+    background-color: rgb(20, 33, 220);
+    position: absolute;
+    left: -45px;
+    top: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60px;
+}
+
+#computerLabel{
+    background-color: rgb(190, 29, 99);
+    position: absolute;
+    right: -45px;
+    top: 30px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#message{
+    font-size: 40px;
+}
+
+#userChoiceIcon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -45px;
+    top: 60px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#computerChoiceIcon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -45px;
+    top: 60px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+

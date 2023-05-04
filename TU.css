@@ -1,0 +1,1744 @@
+﻿/* TU.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+
+html {
+    box-sizing: border-box
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+   
+}
+
+#myLogo{
+    width: 50px;
+    margin-left: 10px;
+    position:absolute;
+    right: 10px;
+    box-shadow: black;
+}
+
+#wrapper{
+    text-align: center;
+    font-family:monospace;
+    padding:8% 16px;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+    /* background-image: url('https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg'); */
+    background-image: url('https://cdn.spacetelescope.org/archives/images/thumb700x/potw2120a.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+summary {
+    display: list-item
+}
+
+audio, canvas, progress, video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active, a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button, input, select, textarea, optgroup {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.TU-serif {
+    font-family: serif
+}
+
+.TU-sans-serif {
+    font-family: sans-serif
+}
+
+.TU-cursive {
+    font-family: cursive
+}
+
+.TU-monospace {
+    font-family: monospace
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.TU-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.TU-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.TU-table, .TU-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.TU-table-all {
+    border: 1px solid #ccc
+}
+
+.TU-bordered tr, .TU-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.TU-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.TU-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.TU-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.TU-hoverable tbody tr:hover, .TU-ul.TU-hoverable li:hover {
+    background-color: #ccc
+}
+
+.TU-centered tr th, .TU-centered tr td {
+    text-align: center
+}
+
+.TU-table td, .TU-table th, .TU-table-all td, .TU-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.TU-table th:first-child, .TU-table td:first-child, .TU-table-all th:first-child, .TU-table-all td:first-child {
+    padding-left: 16px
+}
+
+.TU-btn, .TU-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.TU-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.TU-btn, .TU-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.TU-disabled, .TU-btn:disabled, .TU-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.TU-disabled *, :disabled * {
+    pointer-events: none
+}
+
+.TU-btn.TU-disabled:hover, .TU-btn:disabled:hover {
+    box-shadow: none
+}
+
+.TU-badge, .TU-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.TU-badge {
+    border-radius: 50%
+}
+
+.TU-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.TU-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.TU-ul li:last-child {
+    border-bottom: none
+}
+
+.TU-tooltip, .TU-display-container {
+    position: relative
+}
+
+.TU-tooltip .TU-text {
+    display: none
+}
+
+.TU-tooltip:hover .TU-text {
+    display: inline-block
+}
+
+.TU-ripple:active {
+    opacity: 0.5
+}
+
+.TU-ripple {
+    transition: opacity 0s
+}
+
+.TU-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.TU-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.TU-dropdown-click, .TU-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.TU-dropdown-hover:hover .TU-dropdown-content {
+    display: block
+}
+
+.TU-dropdown-hover:first-child, .TU-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.TU-dropdown-hover:hover>.TU-button:first-child, .TU-dropdown-click:hover>.TU-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.TU-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.TU-check, .TU-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.TU-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto
+}
+
+.TU-bar-block .TU-dropdown-hover, .TU-bar-block .TU-dropdown-click {
+    width: 100%
+}
+
+.TU-bar-block .TU-dropdown-hover .TU-dropdown-content, .TU-bar-block .TU-dropdown-click .TU-dropdown-content {
+    min-width: 100%
+}
+
+.TU-bar-block .TU-dropdown-hover .TU-button, .TU-bar-block .TU-dropdown-click .TU-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.TU-main, #main {
+    transition: margin-left .4s
+}
+
+.TU-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.TU-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.TU-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.TU-center .TU-bar {
+    display: inline-block;
+    width: auto
+}
+
+.TU-bar .TU-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.TU-bar .TU-dropdown-hover, .TU-bar .TU-dropdown-click {
+    position: static;
+    float: left
+}
+
+.TU-bar .TU-button {
+    white-space: normal
+}
+
+.TU-bar-block .TU-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.TU-bar-block.TU-center .TU-bar-item {
+    text-align: center
+}
+
+.TU-block {
+    display: block;
+    width: 100%
+}
+
+.TU-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.TU-container:after, .TU-container:before, .TU-panel:after, .TU-panel:before, .TU-row:after, .TU-row:before, .TU-row-padding:after, .TU-row-padding:before, .TU-cell-row:before, .TU-cell-row:after, .TU-clear:after, .TU-clear:before, .TU-bar:before, .TU-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.TU-col, .TU-half, .TU-third, .TU-twothird, .TU-threequarter, .TU-quarter {
+    float: left;
+    width: 100%
+}
+
+.TU-col.s1 {
+    width: 8.33333%
+}
+
+.TU-col.s2 {
+    width: 16.66666%
+}
+
+.TU-col.s3 {
+    width: 24.99999%
+}
+
+.TU-col.s4 {
+    width: 33.33333%
+}
+
+.TU-col.s5 {
+    width: 41.66666%
+}
+
+.TU-col.s6 {
+    width: 49.99999%
+}
+
+.TU-col.s7 {
+    width: 58.33333%
+}
+
+.TU-col.s8 {
+    width: 66.66666%
+}
+
+.TU-col.s9 {
+    width: 74.99999%
+}
+
+.TU-col.s10 {
+    width: 83.33333%
+}
+
+.TU-col.s11 {
+    width: 91.66666%
+}
+
+.TU-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:601px) {
+    .TU-col.m1 {
+        width: 8.33333%
+    }
+    .TU-col.m2 {
+        width: 16.66666%
+    }
+    .TU-col.m3, .TU-quarter {
+        width: 24.99999%
+    }
+    .TU-col.m4, .TU-third {
+        width: 33.33333%
+    }
+    .TU-col.m5 {
+        width: 41.66666%
+    }
+    .TU-col.m6, .TU-half {
+        width: 49.99999%
+    }
+    .TU-col.m7 {
+        width: 58.33333%
+    }
+    .TU-col.m8, .TU-twothird {
+        width: 66.66666%
+    }
+    .TU-col.m9, .TU-threequarter {
+        width: 74.99999%
+    }
+    .TU-col.m10 {
+        width: 83.33333%
+    }
+    .TU-col.m11 {
+        width: 91.66666%
+    }
+    .TU-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .TU-col.l1 {
+        width: 8.33333%
+    }
+    .TU-col.l2 {
+        width: 16.66666%
+    }
+    .TU-col.l3 {
+        width: 24.99999%
+    }
+    .TU-col.l4 {
+        width: 33.33333%
+    }
+    .TU-col.l5 {
+        width: 41.66666%
+    }
+    .TU-col.l6 {
+        width: 49.99999%
+    }
+    .TU-col.l7 {
+        width: 58.33333%
+    }
+    .TU-col.l8 {
+        width: 66.66666%
+    }
+    .TU-col.l9 {
+        width: 74.99999%
+    }
+    .TU-col.l10 {
+        width: 83.33333%
+    }
+    .TU-col.l11 {
+        width: 91.66666%
+    }
+    .TU-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.TU-rest {
+    overflow: hidden
+}
+
+.TU-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.TU-content, .TU-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.TU-content {
+    max-width: 980px
+}
+
+.TU-auto {
+    max-width: 1140px
+}
+
+.TU-cell-row {
+    display: table;
+    width: 100%
+}
+
+.TU-cell {
+    display: table-cell
+}
+
+.TU-cell-top {
+    vertical-align: top
+}
+
+.TU-cell-middle {
+    vertical-align: middle
+}
+
+.TU-cell-bottom {
+    vertical-align: bottom
+}
+
+.TU-hide {
+    display: none!important
+}
+
+.TU-show-block, .TU-show {
+    display: block!important
+}
+
+.TU-show-inline-block {
+    display: inline-block!important
+}
+
+@media (max-width:1205px) {
+    .TU-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width:600px) {
+    .TU-modal-content {
+        margin: 0 10px;
+        width: auto!important
+    }
+    .TU-modal {
+        padding-top: 30px
+    }
+    .TU-dropdown-hover.TU-mobile .TU-dropdown-content, .TU-dropdown-click.TU-mobile .TU-dropdown-content {
+        position: relative
+    }
+    .TU-hide-small {
+        display: none!important
+    }
+    .TU-mobile {
+        display: block;
+        width: 100%!important
+    }
+    .TU-bar-item.TU-mobile, .TU-dropdown-hover.TU-mobile, .TU-dropdown-click.TU-mobile {
+        text-align: center
+    }
+    .TU-dropdown-hover.TU-mobile, .TU-dropdown-hover.TU-mobile .TU-btn, .TU-dropdown-hover.TU-mobile .TU-button, .TU-dropdown-click.TU-mobile, .TU-dropdown-click.TU-mobile .TU-btn, .TU-dropdown-click.TU-mobile .TU-button {
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+    .TU-modal-content {
+        width: 500px
+    }
+    .TU-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .TU-modal-content {
+        width: 900px
+    }
+    .TU-hide-large {
+        display: none!important
+    }
+    .TU-sidebar.TU-collapse {
+        display: block!important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .TU-hide-medium {
+        display: none!important
+    }
+}
+
+@media (max-width:992px) {
+    .TU-sidebar.TU-collapse {
+        display: none
+    }
+    .TU-main {
+        margin-left: 0!important;
+        margin-right: 0!important
+    }
+    .TU-auto {
+        max-width: 100%
+    }
+}
+
+.TU-top, .TU-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1   /*layer*/
+}
+
+.TU-top {
+    top: 0
+}
+
+.TU-bottom {
+    bottom: 0
+}
+
+.TU-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.TU-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.TU-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.TU-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.TU-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.TU-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.TU-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.TU-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.TU-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.TU-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.TU-display-container:hover .TU-display-hover {
+    display: block
+}
+
+.TU-display-container:hover span.TU-display-hover {
+    display: inline-block
+}
+
+.TU-display-hover {
+    display: none
+}
+
+.TU-display-position {
+    position: absolute
+}
+
+.TU-circle {
+    border-radius: 50%
+}
+
+.TU-round-small {
+    border-radius: 2px
+}
+
+.TU-round, .TU-round-medium {
+    border-radius: 4px
+}
+
+.TU-round-large {
+    border-radius: 8px
+}
+
+.TU-round-xlarge {
+    border-radius: 16px
+}
+
+.TU-round-xxlarge {
+    border-radius: 32px
+}
+
+.TU-row-padding, .TU-row-padding>.TU-half, .TU-row-padding>.TU-third, .TU-row-padding>.TU-twothird, .TU-row-padding>.TU-threequarter, .TU-row-padding>.TU-quarter, .TU-row-padding>.TU-col {
+    padding: 0 8px
+}
+
+.TU-container, .TU-panel {
+    padding: 0.01em 16px
+}
+
+.TU-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.TU-code, .TU-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.TU-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.TU-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.TU-card, .TU-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.TU-card-4, .TU-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.TU-spin {
+    animation: TU-spin 2s infinite linear
+}
+
+@keyframes TU-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.TU-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.TU-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.TU-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.TU-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.TU-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.TU-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.TU-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.TU-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.TU-animate-input:focus {
+    width: 100%!important
+}
+
+.TU-opacity, .TU-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.TU-opacity-off, .TU-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.TU-opacity-max {
+    opacity: 0.25
+}
+
+.TU-opacity-min {
+    opacity: 0.75
+}
+
+.TU-greyscale-max, .TU-grayscale-max, .TU-hover-greyscale:hover, .TU-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.TU-greyscale, .TU-grayscale {
+    filter: grayscale(75%)
+}
+
+.TU-greyscale-min, .TU-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.TU-sepia {
+    filter: sepia(75%)
+}
+
+.TU-sepia-max, .TU-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.TU-sepia-min {
+    filter: sepia(50%)
+}
+
+.TU-tiny {
+    font-size: 10px!important
+}
+
+.TU-small {
+    font-size: 12px!important
+}
+
+.TU-medium {
+    font-size: 15px!important
+}
+
+.TU-large {
+    font-size: 18px!important
+}
+
+.TU-xlarge {
+    font-size: 24px!important
+}
+
+.TU-xxlarge {
+    font-size: 36px!important
+}
+
+.TU-xxxlarge {
+    font-size: 48px!important
+}
+
+.TU-jumbo {
+    font-size: 64px!important
+}
+
+.TU-left-align {
+    text-align: left!important
+}
+
+.TU-right-align {
+    text-align: right!important
+}
+
+.TU-justify {
+    text-align: justify!important
+}
+
+.TU-center {
+    text-align: center!important
+}
+
+.TU-border-0 {
+    border: 0!important
+}
+
+.TU-border {
+    border: 1px solid #ccc!important
+}
+
+.TU-border-top {
+    border-top: 1px solid #ccc!important
+}
+
+.TU-border-bottom {
+    border-bottom: 1px solid #ccc!important
+}
+
+.TU-border-left {
+    border-left: 1px solid #ccc!important
+}
+
+.TU-border-right {
+    border-right: 1px solid #ccc!important
+}
+
+.TU-topbar {
+    border-top: 6px solid #ccc!important
+}
+
+.TU-bottombar {
+    border-bottom: 6px solid #ccc!important
+}
+
+.TU-leftbar {
+    border-left: 6px solid #ccc!important
+}
+
+.TU-rightbar {
+    border-right: 6px solid #ccc!important
+}
+
+.TU-section, .TU-code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important
+}
+
+.TU-margin {
+    margin: 16px!important
+}
+
+.TU-margin-top {
+    margin-top: 16px!important
+}
+
+.TU-margin-bottom {
+    margin-bottom: 16px!important
+}
+
+.TU-margin-left {
+    margin-left: 16px!important
+}
+
+.TU-margin-right {
+    margin-right: 16px!important
+}
+
+.TU-padding-small {
+    padding: 4px 8px!important
+}
+
+.TU-padding {
+    padding: 8px 16px!important
+}
+
+.TU-padding-large {
+    padding: 12px 24px!important
+}
+
+.TU-padding-16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important
+}
+
+.TU-padding-24 {
+    padding-top: 24px!important;
+    padding-bottom: 24px!important
+}
+
+.TU-padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+.TU-padding-48 {
+    padding-top: 48px!important;
+    padding-bottom: 48px!important
+}
+
+.TU-padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+
+.TU-padding-top-64 {
+    padding-top: 64px!important
+}
+
+.TU-padding-top-48 {
+    padding-top: 48px!important
+}
+
+.TU-padding-top-32 {
+    padding-top: 32px!important
+}
+
+.TU-padding-top-24 {
+    padding-top: 24px!important
+}
+
+.TU-left {
+    float: left!important
+}
+
+.TU-right {
+    float: right!important
+}
+
+.TU-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+
+.TU-transparent, .TU-hover-none:hover {
+    background-color: transparent!important
+}
+
+.TU-hover-none:hover {
+    box-shadow: none!important
+}
+
+/* Colors */
+
+.TU-amber, .TU-hover-amber:hover {
+    color: #000!important;
+    background-color: #ffc107!important
+}
+
+.TU-aqua, .TU-hover-aqua:hover {
+    color: #000!important;
+    background-color: #00ffff!important
+}
+
+.TU-blue, .TU-hover-blue:hover {
+    color: #fff!important;
+    background-color: #2196F3!important
+}
+
+.TU-light-blue, .TU-hover-light-blue:hover {
+    color: #000!important;
+    background-color: #87CEEB!important
+}
+
+.TU-brown, .TU-hover-brown:hover {
+    color: #fff!important;
+    background-color: #795548!important
+}
+
+.TU-cyan, .TU-hover-cyan:hover {
+    color: #000!important;
+    background-color: #00bcd4!important
+}
+
+.TU-blue-grey, .TU-hover-blue-grey:hover, .TU-blue-gray, .TU-hover-blue-gray:hover {
+    color: #fff!important;
+    background-color: #607d8b!important
+}
+
+.TU-green, .TU-hover-green:hover {
+    color: #fff!important;
+    background-color: #4CAF50!important
+}
+
+.TU-light-green, .TU-hover-light-green:hover {
+    color: #000!important;
+    background-color: #8bc34a!important
+}
+
+.TU-indigo, .TU-hover-indigo:hover {
+    color: #fff!important;
+    background-color: #3f51b5!important
+}
+
+.TU-khaki, .TU-hover-khaki:hover {
+    color: #000!important;
+    background-color: #f0e68c!important
+}
+
+.TU-lime, .TU-hover-lime:hover {
+    color: #000!important;
+    background-color: #cddc39!important
+}
+
+.TU-orange, .TU-hover-orange:hover {
+    color: #000!important;
+    background-color: #61b4ee!important
+}
+
+.TU-deep-orange, .TU-hover-deep-orange:hover {
+    color: #fff!important;
+    background-color: #ff5722!important
+}
+
+.TU-pink, .TU-hover-pink:hover {
+    color: #fff!important;
+    background-color: #e91e63!important
+}
+
+.TU-purple, .TU-hover-purple:hover {
+    color: #fff!important;
+    background-color: #9c27b0!important
+}
+
+.TU-deep-purple, .TU-hover-deep-purple:hover {
+    color: #fff!important;
+    background-color: #673ab7!important
+}
+
+.TU-red, .TU-hover-red:hover {
+    color: #fff!important;
+    background-color: #f44336!important
+}
+
+.TU-dark-blue, .TU-hover-red:hover {
+    color: rgb(255, 255, 255)!important;
+    background-color: #520ff0!important
+}
+
+.TU-sand, .TU-hover-sand:hover {
+    color: #000!important;
+    background-color: #fdf5e6!important
+}
+
+.TU-teal, .TU-hover-teal:hover {
+    color: #fff!important;
+    background-color: #009688!important
+}
+
+.TU-yellow, .TU-hover-yellow:hover {
+    color: #000!important;
+    background-color: #ffeb3b!important
+}
+
+.TU-white, .TU-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
+}
+
+.TU-black, .TU-hover-black:hover {
+    color: #fff!important;
+    background-color: rgb(58, 55, 55)!important
+}
+
+.TU-grey, .TU-hover-grey:hover, .TU-gray, .TU-hover-gray:hover {
+    color: #000!important;
+    background-color: #9e9e9e!important
+}
+
+.TU-light-grey, .TU-hover-light-grey:hover, .TU-light-gray, .TU-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important
+}
+
+.TU-dark-grey, .TU-hover-dark-grey:hover, .TU-dark-gray, .TU-hover-dark-gray:hover {
+    color: #fff!important;
+    background-color: #616161!important
+}
+
+.TU-pale-red, .TU-hover-pale-red:hover {
+    color: #000!important;
+    background-color: #ffdddd!important
+}
+
+.TU-pale-green, .TU-hover-pale-green:hover {
+    color: #000!important;
+    background-color: #ddffdd!important
+}
+
+.TU-pale-yellow, .TU-hover-pale-yellow:hover {
+    color: #000!important;
+    background-color: #ffffcc!important
+}
+
+.TU-pale-blue, .TU-hover-pale-blue:hover {
+    color: #000!important;
+    background-color: #ddffff!important
+}
+
+.TU-text-amber, .TU-hover-text-amber:hover {
+    color: #ffc107!important
+}
+
+.TU-text-aqua, .TU-hover-text-aqua:hover {
+    color: #00ffff!important
+}
+
+.TU-text-blue, .TU-hover-text-blue:hover {
+    color: #2196F3!important
+}
+
+.TU-text-light-blue, .TU-hover-text-light-blue:hover {
+    color: #87CEEB!important
+}
+
+.TU-text-brown, .TU-hover-text-brown:hover {
+    color: #795548!important
+}
+
+.TU-text-cyan, .TU-hover-text-cyan:hover {
+    color: #00bcd4!important
+}
+
+.TU-text-blue-grey, .TU-hover-text-blue-grey:hover, .TU-text-blue-gray, .TU-hover-text-blue-gray:hover {
+    color: #607d8b!important
+}
+
+.TU-text-green, .TU-hover-text-green:hover {
+    color: #4CAF50!important
+}
+
+.TU-text-light-green, .TU-hover-text-light-green:hover {
+    color: #8bc34a!important
+}
+
+.TU-text-indigo, .TU-hover-text-indigo:hover {
+    color: #3f51b5!important
+}
+
+.TU-text-khaki, .TU-hover-text-khaki:hover {
+    color: #b4aa50!important
+}
+
+.TU-text-lime, .TU-hover-text-lime:hover {
+    color: #cddc39!important
+}
+
+.TU-text-orange, .TU-hover-text-orange:hover {
+    color: #ff9800!important
+}
+
+.TU-text-deep-orange, .TU-hover-text-deep-orange:hover {
+    color: #ff5722!important
+}
+
+.TU-text-pink, .TU-hover-text-pink:hover {
+    color: #e91e63!important
+}
+
+.TU-text-purple, .TU-hover-text-purple:hover {
+    color: #9c27b0!important
+}
+
+.TU-text-deep-purple, .TU-hover-text-deep-purple:hover {
+    color: #673ab7!important
+}
+
+.TU-text-red, .TU-hover-text-red:hover {
+    color: #f44336!important
+}
+
+.TU-text-sand, .TU-hover-text-sand:hover {
+    color: #fdf5e6!important
+}
+
+.TU-text-teal, .TU-hover-text-teal:hover {
+    color: #009688!important
+}
+
+.TU-text-yellow, .TU-hover-text-yellow:hover {
+    color: #d2be0e!important
+}
+
+.TU-text-white, .TU-hover-text-white:hover {
+    color: #fff!important
+}
+
+.TU-text-black, .TU-hover-text-black:hover {
+    color: #000!important
+}
+
+.TU-text-grey, .TU-hover-text-grey:hover, .TU-text-gray, .TU-hover-text-gray:hover {
+    color: #757575!important
+}
+
+.TU-text-light-grey, .TU-hover-text-light-grey:hover, .TU-text-light-gray, .TU-hover-text-light-gray:hover {
+    color: #f1f1f1!important
+}
+
+.TU-text-dark-grey, .TU-hover-text-dark-grey:hover, .TU-text-dark-gray, .TU-hover-text-dark-gray:hover {
+    color: #3a3a3a!important
+}
+
+.TU-border-amber, .TU-hover-border-amber:hover {
+    border-color: #ffc107!important
+}
+
+.TU-border-aqua, .TU-hover-border-aqua:hover {
+    border-color: #00ffff!important
+}
+
+.TU-border-blue, .TU-hover-border-blue:hover {
+    border-color: #2196F3!important
+}
+
+.TU-border-light-blue, .TU-hover-border-light-blue:hover {
+    border-color: #87CEEB!important
+}
+
+.TU-border-brown, .TU-hover-border-brown:hover {
+    border-color: #795548!important
+}
+
+.TU-border-cyan, .TU-hover-border-cyan:hover {
+    border-color: #00bcd4!important
+}
+
+.TU-border-blue-grey, .TU-hover-border-blue-grey:hover, .TU-border-blue-gray, .TU-hover-border-blue-gray:hover {
+    border-color: #607d8b!important
+}
+
+.TU-border-green, .TU-hover-border-green:hover {
+    border-color: #4CAF50!important
+}
+
+.TU-border-light-green, .TU-hover-border-light-green:hover {
+    border-color: #8bc34a!important
+}
+
+.TU-border-indigo, .TU-hover-border-indigo:hover {
+    border-color: #3f51b5!important
+}
+
+.TU-border-khaki, .TU-hover-border-khaki:hover {
+    border-color: #f0e68c!important
+}
+
+.TU-border-lime, .TU-hover-border-lime:hover {
+    border-color: #cddc39!important
+}
+
+.TU-border-orange, .TU-hover-border-orange:hover {
+    border-color: #ff9800!important
+}
+
+.TU-border-deep-orange, .TU-hover-border-deep-orange:hover {
+    border-color: #ff5722!important
+}
+
+.TU-border-pink, .TU-hover-border-pink:hover {
+    border-color: #e91e63!important
+}
+
+.TU-border-purple, .TU-hover-border-purple:hover {
+    border-color: #9c27b0!important
+}
+
+.TU-border-deep-purple, .TU-hover-border-deep-purple:hover {
+    border-color: #673ab7!important
+}
+
+.TU-border-red, .TU-hover-border-red:hover {
+    border-color: #f44336!important
+}
+
+.TU-border-sand, .TU-hover-border-sand:hover {
+    border-color: #fdf5e6!important
+}
+
+.TU-border-teal, .TU-hover-border-teal:hover {
+    border-color: #009688!important
+}
+
+.TU-border-yellow, .TU-hover-border-yellow:hover {
+    border-color: #ffeb3b!important
+}
+
+.TU-border-white, .TU-hover-border-white:hover {
+    border-color: #fff!important
+}
+
+.TU-border-black, .TU-hover-border-black:hover {
+    border-color: #000!important
+}
+
+.TU-border-grey, .TU-hover-border-grey:hover, .TU-border-gray, .TU-hover-border-gray:hover {
+    border-color: #9e9e9e!important
+}
+
+.TU-border-light-grey, .TU-hover-border-light-grey:hover, .TU-border-light-gray, .TU-hover-border-light-gray:hover {
+    border-color: #f1f1f1!important
+}
+
+.TU-border-dark-grey, .TU-hover-border-dark-grey:hover, .TU-border-dark-gray, .TU-hover-border-dark-gray:hover {
+    border-color: #616161!important
+}
+
+.TU-border-pale-red, .TU-hover-border-pale-red:hover {
+    border-color: #ffe7e7!important
+}
+
+.TU-border-pale-green, .TU-hover-border-pale-green:hover {
+    border-color: #e7ffe7!important
+}
+
+.TU-border-pale-yellow, .TU-hover-border-pale-yellow:hover {
+    border-color: #ffffcc!important
+}
+
+.TU-border-pale-blue, .TU-hover-border-pale-blue:hover {
+    border-color: #e7ffff!important
+}
