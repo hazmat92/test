@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Lizard Spock</title>
+  
+    <link rel="stylesheet" href="./css/TU.css"> 
+    <link rel="stylesheet" href="./css/RPS.css">
+</head>
+<body >
+    <!-- NavBar-->
+    <div class="TU-top">
+        <div class="TU-bar TU-orange TU-card TU-left-align TU-large">
+          <img id="myLogo" src="https://tekkieuni.com/wp-content/themes/tekkie/images/logo-color.png.webp" alt="logo">
+          <a href="./index.html#top" class="TU-bar-item TU-button TU-padding-large TU-white">Home</a>
+          <a href="./index.html#about" class="TU-bar-item TU-button TU-padding-large TU-hover-white">About</a>
+          <a href="RPS.html" class="TU-bar-item TU-button TU-padding-large TU-hover-white">Rock Paper Scissors Lizard Spock</a>
+          <a href="myBalloonsGame.html" class="TU-bar-item TU-button TU-padding-large TU-hover-white">My Waterfall Game</a>
+          <a href="./evenNotDali.html" class="TU-bar-item TU-button TU-padding-large TU-hover-white">Even Not Dali</a>
+          <a href="./howToTrainYourDragon.html" class="TU-bar-item TU-button TU-padding-large TU-hover-white">How to train your Dragon</a>
+          <a href="./collector.html" class="TU-bar-item TU-button TU-padding-large TU-hover-white">Collector</a>
+        </div>
+    </div>
+   <!-- END NavBar-->
+
+
+      <!-- The Game -->
+    <div id="wrapper" style="padding:10% 16px">
+      <h1 id="gameTitle">Rock Paper Scissors Lizard Spock</h1>
+      <h3 id="instructons">Rock crush scissors and lizard 
+          <br> Scissors cut paper and lizard 
+          <br> Paper engulfs rock and spock 
+          <br> Lizard eats spock and paper
+          <br> Spock breaks rock and scissors
+      </h3>
+
+      <div id="scoreBoard">
+          <div id="userLabel" class="badge">User</div>
+          <div id="computerLabel" class="badge">Computer</div>
+          <div id="userChoiceIcon" class="badge"></div>
+          <div id="computerChoiceIcon" class="badge"></div>
+          <span id="userScore">0</span>:<span id="computerScore">0</span>
+      </div>
+
+      <div id="userArea" class="userArea">
+          <h2 id="instructons">Play wisely!</h2>
+          <div id="spockDiv" class="rps">
+              <img id="spockImg" src="images/spock.png">
+          </div>
+          <div id="rockDiv" class="rps">
+              <img id="rockImg" src="images/rock.png">
+          </div>
+          <div id="paperDiv" class="rps">
+              <img id="paperImg" src="images/paper.png">
+          </div>
+          <div id="scissorsDiv" class="rps">
+              <img id="scissorsImg" src="images/scissors.png">
+          </div>
+          <div id="lizardDiv" class="rps">
+              <img id="lizardImg" src="images/lizard.png">
+          </div>
+      </div>  
+
+      <div id="message"> </div>
+    </div>
+      <!-- END The Game -->
+
+
+  <!--Footer-->
+    <div class="TU-container TU-black TU-center TU-opacity TU-padding-64">
+      <h1 class="TU-margin TU-xlarge">sHimon IzzzZe Bes! Mercy TekkieinU</h1>
+    </div>
+    <!--END Footer -->
+
+    <script src="./js/RPS.js"></script>
+</body>
+</html>
+
